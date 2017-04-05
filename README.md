@@ -18,3 +18,8 @@ PermissionListener listener = new PermissionListener() {
         }
     };
 ```
+
+```groovy
+compile 'cn.jack:PermissionManager:1.0.0'
+```
+
