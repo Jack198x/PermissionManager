@@ -1,4 +1,4 @@
-package jack.cn.permissionmanager;
+package cn.jack.permissionmanager;
 
 import java.util.List;
 

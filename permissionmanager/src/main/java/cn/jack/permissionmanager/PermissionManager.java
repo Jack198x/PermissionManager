@@ -1,4 +1,4 @@
-package jack.cn.permissionmanager;
+package cn.jack.permissionmanager;
 
 import android.app.Activity;
 import android.app.FragmentManager;

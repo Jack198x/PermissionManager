@@ -1,4 +1,4 @@
-package jack.cn.permissionmanager;
+package cn.jack.permissionmanager;
 
 import android.app.Fragment;
 import android.content.pm.PackageManager;

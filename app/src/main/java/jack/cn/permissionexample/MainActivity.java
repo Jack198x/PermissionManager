@@ -7,8 +7,9 @@ import android.view.View;
 
 import java.util.List;
 
-import jack.cn.permissionmanager.PermissionListener;
-import jack.cn.permissionmanager.PermissionManager;
+import cn.jack.permissionmanager.PermissionListener;
+import cn.jack.permissionmanager.PermissionManager;
+
 
 public class MainActivity extends AppCompatActivity {
 
