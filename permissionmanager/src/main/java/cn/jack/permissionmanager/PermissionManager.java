@@ -38,7 +38,7 @@ public class PermissionManager {
 
 
     /**
-     * 申请权限
+     * requestPermission
      *
      * @param permissions
      */
@@ -69,7 +69,7 @@ public class PermissionManager {
 
 
     /**
-     * 检查权限是否已经被允许
+     * checkPermission
      *
      * @param context
      * @param permission
