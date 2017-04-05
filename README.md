@@ -1,5 +1,7 @@
 # PermissionManager
-runtime permission util
+Android Runtime Permission Util
+
+## Usage
 ```java
 PermissionManager permissionManager = new PermissionManager(this, listener);
 permissionManager.requestPermission(Manifest.permission.READ_PHONE_STATE,
@@ -18,7 +20,7 @@ PermissionListener listener = new PermissionListener() {
         }
     };
 ```
-
+## Setup
 ```groovy
 compile 'cn.jack:PermissionManager:1.0.0'
 ```
