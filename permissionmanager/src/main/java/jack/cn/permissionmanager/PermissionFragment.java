@@ -1,8 +1,8 @@
 package jack.cn.permissionmanager;
 
+import android.app.Fragment;
 import android.content.pm.PackageManager;
 import android.support.annotation.NonNull;
-import android.support.v4.app.Fragment;
 
 import java.util.ArrayList;
 import java.util.Arrays;

@@ -1,13 +1,12 @@
 package jack.cn.permissionmanager;
 
 import android.app.Activity;
+import android.app.FragmentManager;
 import android.content.Context;
 import android.content.pm.PackageManager;
 import android.os.Build;
 import android.support.annotation.NonNull;
-import android.support.v4.app.FragmentManager;
 import android.support.v4.content.ContextCompat;
-import android.support.v7.app.AppCompatActivity;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -25,11 +24,11 @@ public class PermissionManager {
     private PermissionFragment fragment;
 
 
-    public PermissionManager(@NonNull AppCompatActivity activity, @NonNull PermissionListener listener) {
+    public PermissionManager(@NonNull Activity activity, @NonNull PermissionListener listener) {
         this.activity = activity;
         this.listener = listener;
         fragment = new PermissionFragment();
-        FragmentManager fragmentManager = activity.getSupportFragmentManager();
+        FragmentManager fragmentManager = activity.getFragmentManager();
         fragmentManager
                 .beginTransaction()
                 .add(fragment, TAG)
