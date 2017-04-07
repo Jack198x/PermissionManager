@@ -28,6 +28,7 @@ public class PermissionManager {
         this.activity = activity;
         this.listener = listener;
         fragment = new PermissionFragment();
+        fragment.setListener(listener);
         FragmentManager fragmentManager = activity.getFragmentManager();
         fragmentManager
                 .beginTransaction()
