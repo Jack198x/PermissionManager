@@ -22,6 +22,11 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         imageView = (ImageView) findViewById(R.id.imageView);
         final PermissionManager permissionManager = new PermissionManager(this, listener);
+
+        permissionManager.requestPermission(Manifest.permission.READ_PHONE_STATE,
+                Manifest.permission.READ_EXTERNAL_STORAGE,
+                Manifest.permission.CAMERA);
+
         findViewById(R.id.permissionButtion).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

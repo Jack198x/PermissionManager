@@ -4,13 +4,13 @@ apply plugin: 'com.novoda.bintray-release'
 
 android {
     compileSdkVersion 25
-    buildToolsVersion "25.0.2"
+    buildToolsVersion "25.0.3"
 
     defaultConfig {
         minSdkVersion 15
         targetSdkVersion 25
-        versionCode 104
-        versionName "1.0.4"
+        versionCode 105
+        versionName "1.0.5"
     }
     buildTypes {
         release {
@@ -28,7 +28,7 @@ android {
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile 'com.android.support:appcompat-v7:25.3.0'
+    compile 'com.android.support:appcompat-v7:25.3.1'
 }
 
 
@@ -36,7 +36,7 @@ publish {
     userOrg = 'jackcn'      //bintray注册的用户名
     groupId = 'cn.jack'         //compile引用时的第1部分groupId
     artifactId = 'permissionmanager'     //compile引用时的第2部分项目名
-    publishVersion = '1.0.4'    //compile引用时的第3部分版本号
+    publishVersion = '1.0.5'    //compile引用时的第3部分版本号
     desc = 'Android Runtime Permission Util '
     website = 'https://github.com/Jack198x/PermissionManager'
 }

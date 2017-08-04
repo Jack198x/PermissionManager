@@ -28,11 +28,17 @@ public class PermissionFragment extends Fragment {
     @Override
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
-        handleRequestPermissionsResult(requestCode, permissions, grantResults);
+        if (getActivity() != null) {
+            handleRequestPermissionsResult(requestCode, permissions, grantResults);
+        }
+
     }
 
 
     public void handleRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+        if(listener==null){
+            return;
+        }
         boolean allPermissionsGranted = true;
         List<String> deniedPermissions = new ArrayList<>();
         if (requestCode == PermissionManager.REQUEST_CODE_PERMISSIONS) {
