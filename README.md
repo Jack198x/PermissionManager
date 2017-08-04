@@ -22,6 +22,6 @@ PermissionListener listener = new PermissionListener() {
 ```
 ## Setup
 ```groovy
-compile 'cn.jack:PermissionManager:1.0.0'
+compile 'cn.jack:PermissionManager:1.0.4'
 ```
 
