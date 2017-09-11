@@ -9,15 +9,15 @@ import android.os.Build;
 
 public final class PermissionGroup {
 
-    public static final String[] CALENDAR;   // 读写日历。
-    public static final String[] CAMERA;     // 相机。
-    public static final String[] CONTACTS;   // 读写联系人。
-    public static final String[] LOCATION;   // 读位置信息。
-    public static final String[] MICROPHONE; // 使用麦克风。
-    public static final String[] PHONE;      // 读电话状态、打电话、读写电话记录。
-    public static final String[] SENSORS;    // 传感器。
-    public static final String[] SMS;        // 读写短信、收发短信。
-    public static final String[] STORAGE;    // 读写存储卡。
+    public static final String[] CALENDAR;
+    public static final String[] CAMERA;
+    public static final String[] CONTACTS;
+    public static final String[] LOCATION;
+    public static final String[] MICROPHONE;
+    public static final String[] PHONE;
+    public static final String[] SENSORS;
+    public static final String[] SMS;
+    public static final String[] STORAGE;
 
     static {
         if (Build.VERSION.SDK_INT < Build.VERSION_CODES.M) {
