@@ -36,7 +36,7 @@ public class PermissionFragment extends Fragment {
 
 
     public void handleRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
-        if(listener==null){
+        if (listener == null) {
             return;
         }
         boolean allPermissionsGranted = true;
